@@ -1,0 +1,22 @@
+{
+  "name": "loom-global-dpos-chain",
+  "version": "1.0.0",
+  "description": "Scripts to launch and teardown a global cluster of instances automagicalloy elected to be validators in a loom blockchain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marplemr/loom-global-dpos-chain.git"
+  },
+  "author": "Matthew Marple",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marplemr/loom-global-dpos-chain/issues"
+  },
+  "homepage": "https://github.com/marplemr/loom-global-dpos-chain#readme",
+  "dependencies": {
+    "do-wrapper": "^3.14.1"
+  }
+}
