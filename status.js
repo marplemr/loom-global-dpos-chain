@@ -1,17 +1,15 @@
 if (!process.env.API_KEY) {
   console.error('missing API_KEY')
-  return process.exit(1)
+  process.exit(1)
 }
 
 const DigitalOcean = require('do-wrapper').default
-const  api = new DigitalOcean(process.env.API_KEY, 0)
+const api = new DigitalOcean(process.env.API_KEY, 0)
 const getAllQ = {
   tag_name: '',
   per_page: 25,
   page: 1
 }
-
-
 
 const dropletsStatus = async () => {
   const accountInfo = await api.account()
