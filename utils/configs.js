@@ -59,3 +59,9 @@ export const getAllQ = {
   per_page: 25,
   page: 1
 }
+// function to(promise) {
+//    return promise.then(data => {
+//       return [null, data];
+//    })
+//    .catch(err => [err]);
+// }
