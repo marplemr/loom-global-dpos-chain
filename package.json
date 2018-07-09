@@ -8,6 +8,7 @@
     "status": "./node_modules/.bin/babel-node status.js",
     "delete": "./node_modules/.bin/babel-node delete.js",
     "iLoom": "./node_modules/.bin/babel-node ssh1.js",
+    "iCluster": "./node_modules/.bin/babel-node install-all.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

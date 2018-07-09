@@ -29,24 +29,15 @@ chmod +x loom
 
 export GOPATH=~/gopath
 export PATH=$GOPATH/bin:$PATH
-./loom spin weave-blueprint
-cd blueprint
 export GOPATH=$GOPATH:`pwd`
-make deps
-make
-cd build
 
-../../loom init
-cp ../genesis.example.json genesis.json
+./loom init
 
-# echo "generating blueprint dapp keys"
-# ../../loom genkey -k priv_key -a pub_key
+touch ./loom.yml
+echo 'QueryServerHost: "tcp://0.0.0.0:9999"' >> ./loom.yml
 
-# touch ../../loom.yml
-# echo 'QueryServerHost: "tcp://0.0.0.0:9999"' >> ../../loom.yml
+echo "installation successful"
+exit 0
 
-# echo "retrieving loom public key"
-# ../../loom nodekey
-
-echo "running loom blockchain"
-../../loom run
+# echo "running loom blockchain"
+# ../../loom run
